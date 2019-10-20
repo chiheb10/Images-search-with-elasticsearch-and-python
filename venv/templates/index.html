@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="/" method="post" autocomplete="on">
+    <label form="q">search here : </label><input type="text" name="q" id="q" values="{{q}}">
+    <input type="submit" value="search">
+<ol>
+
+
+{% for resp in response %}
+    <li>
+       <img src="{{resp}}">
+    </li>
+    {% endfor %}
+
+
+</ol>
+</form>
+</body>
+</html>
